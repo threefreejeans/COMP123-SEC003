@@ -149,3 +149,78 @@ input, textarea{
     background-position:center;
 
 }
+
+#mobile{
+    display:none;
+}
+
+@media only screen and (max-width: 1024px){
+    body{
+        margin:0px;
+        background-color: #FFFFFF;
+    }
+    #wrapper{
+        min-width:400px;
+        width:auto;
+        box-shadow:none;
+        border:none;
+    }
+    header{
+        height:auto;
+        padding:0.5em 0em;
+    }
+    h1{
+        letter-spacing: 0.1em;
+    }
+    nav{
+        display:block;
+        width:auto;
+    }
+    main{
+        display:block;
+        width:auto;
+    }
+    nav>ul{
+        display:flex;
+        justify-content: space-around;
+    }
+    nav li{
+        display:inline;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        padding:0.1em 1em;
+        font-size:90%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    nav{
+        padding:0px;
+    }
+    nav>ul{
+        display:block;
+        text-align:center;
+    }
+    nav li{
+        display:block;
+        margin:0px;
+        border-bottom: 2px solid #330000;
+    }
+    nav a{
+        display:block;
+    }
+    #homehero,#yurthero,#trailhero{
+        display:none;
+    }
+    #mobile{
+        display:inline;
+    }
+    #desktop{
+        display:none;
+    }
+
+}
