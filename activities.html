@@ -31,11 +31,26 @@
                 <h3>Bird Watching </h3>
                 <p>While anytime is a good time for bird watching at Pacific Trails. We offer guided bird
     watching trips at sunrise several times a week. </p>
+                <div id="grid">
+                    <div id="thumbnails">
+                        <img src="images/photo1.jpg" width="200" height="150" alt="" onclick="replaceImage(this)">
+                        <img src="images/photo2.jpg" width="200" height="150" alt="" onclick="replaceImage(this)">
+                        <img src="images/photo3.jpg" width="200" height="150" alt="" onclick="replaceImage(this)">
+                        <img src="images/photo4.jpg" width="200" height="150" alt="" onclick="replaceImage(this)">
+                    </div>
+                    <img id="bigimage" src="images/photo1.jpg" width="400" height="300" alt="">
+                </div>
             </main>
             <footer>
                 Copyright &copy; 2012 Pacific Trails Resort
                 <p><a href="mailto:youremail@my.centennialcollege.ca"></a></p>
             </footer>
         </div>
+        <script>
+            function replaceImage(clickedImage){
+                var big = document.getElementById("bigimage");
+                big.src = clickedImage.src;
+            }
+        </script>
     </body>
 </html>

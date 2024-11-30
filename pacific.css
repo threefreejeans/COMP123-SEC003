@@ -32,6 +32,10 @@ nav > ul{
     padding:0px;
 }
 
+nav a{
+    transition:color 3s ease-out;
+}
+
 nav a:link{
     color:#5C7FA3;
 }
@@ -111,6 +115,11 @@ input, textarea{
     font-size:90%;
 }
 
+video{
+    float:right;
+    padding:20px;
+}
+
 .text{
     text-align:left;
 }
@@ -154,6 +163,23 @@ input, textarea{
     display:none;
 }
 
+#grid{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+}
+#thumbnails{
+    flex-direction: column;
+    gap:10px
+}
+
+#bigimage{
+    width:100%;
+    height:auto;
+    padding: 5%;
+}
 @media only screen and (max-width: 1024px){
     body{
         margin:0px;
